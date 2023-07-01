@@ -153,6 +153,7 @@ const Welcome = () => {
                       {new Date(item.props.dateExpiry).toLocaleDateString()})
                     </span>
                   )}
+                  <Notifications name={item.props.name} />
                 </li>
               ))}
             </ul>
