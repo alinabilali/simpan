@@ -1,0 +1,75 @@
+.background-container {
+  background: #ffe2be url(../../assets/img/login.png) right top / auto 100vh
+    no-repeat;
+}
+.login {
+  max-width: 430px;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+
+  height: 100vh;
+}
+
+.login h3 {
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+.login-group {
+  margin-bottom: 20px;
+}
+
+.login-group label {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 20px 0;
+  color: #3f4f59;
+}
+
+.login-group input[type='text'],
+.login-group input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #aeb5b9;
+}
+
+.login-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--ORANGE);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.login-group button:hover {
+  background-color: var(--GREEN);
+}
+
+.login-group .error-message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.login-group .success-message {
+  color: #008000;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 0;
+  }
+}
+
+.forgot-password {
+  margin-right: 0;
+}
