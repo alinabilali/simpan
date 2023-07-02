@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { setCredentials } from './authSlice';
 import { useLoginMutation } from './authApiSlice';
 import usePersist from '../../hooks/usePersist';
-import LoadingGif from '../../assets/img/login.webp';
+import LoadingGif from '../../assets/img/login.gif';
 
 const Login = () => {
   const userRef = useRef();
