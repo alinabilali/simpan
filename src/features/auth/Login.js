@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import { setCredentials } from './authSlice';
 import { useLoginMutation } from './authApiSlice';
 import usePersist from '../../hooks/usePersist';
+import LoadingGif from '../../assets/img/login.webp';
 
 const Login = () => {
   const userRef = useRef();
@@ -54,8 +55,22 @@ const Login = () => {
   const handleToggle = () => setPersist((prev) => !prev);
 
   const errClass = errMsg ? 'errmsg' : 'offscreen';
+  // CSS styles for the loading indicator
+  const loadingStyles = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    fontSize: '20px',
+    color: '#555',
+  };
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading)
+    <div style={loadingStyles}>
+      <img src={LoadingGif} alt="Loading" />
+      <p>This system is aimed to stop food waste</p>
+      {/* Add additional styling or loading animation here */}
+    </div>;
 
   const content = (
     <div className="background-container">
