@@ -48,12 +48,12 @@ export const BARCODES = [
     barcodeNum: '9556252265403',
   },
   {
-    name: 'Tea',
+    name: 'Lipton Tea',
     dateExpiry: '2025-01-26',
     category: 'Coffee and Tea',
     place: 'Pantry',
     quantity: '1 package(s)',
-    barcodeNum: '88880860210001',
+    barcodeNum: '8888086021001',
   },
   {
     name: 'Milo',
