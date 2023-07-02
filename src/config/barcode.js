@@ -1,15 +1,15 @@
 export const BARCODES = [
   {
-    name: 'Maggi Kari',
-    dateExpiry: '2023-09-03',
+    name: 'Maggi Mi Goreng Perisa Cili ala Kampung',
+    dateExpiry: '2024-01-31',
     category: 'Easy Meals',
     place: 'Pantry',
-    quantity: '6 package(s)',
-    barcodeNum: '9556001129741',
+    quantity: '1 package(s)',
+    barcodeNum: '9556001276636',
   },
   {
     name: 'Gardinea Quick Bites Perisa Jagung',
-    dateExpiry: '2023-01-30',
+    dateExpiry: '2023-07-07',
     category: 'Bread',
     place: 'Pantry',
     quantity: '1 package(s)',
@@ -17,7 +17,7 @@ export const BARCODES = [
   },
   {
     name: 'Gardinea Quick Bites Perisa Coklat',
-    dateExpiry: '2023-01-31',
+    dateExpiry: '2023-07-08',
     category: 'Bread',
     place: 'Pantry',
     quantity: '1 package(s)',
@@ -46,5 +46,21 @@ export const BARCODES = [
     place: 'Pantry',
     quantity: '1 serving(s)',
     barcodeNum: '9556252265403',
+  },
+  {
+    name: 'Tea',
+    dateExpiry: '2025-01-26',
+    category: 'Coffee and Tea',
+    place: 'Pantry',
+    quantity: '1 package(s)',
+    barcodeNum: '88880860210001',
+  },
+  {
+    name: 'Milo',
+    dateExpiry: '2024-04-30',
+    category: 'Milk and Chocolate',
+    place: 'Pantry',
+    quantity: '1 serving(s)',
+    barcodeNum: '9556001228345',
   },
 ];

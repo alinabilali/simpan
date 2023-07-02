@@ -5,7 +5,7 @@ import Food from '../food/Food';
 import Notifications from '../food/Notifications';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUtensils } from '@fortawesome/free-solid-svg-icons';
-
+import NotificationExpiring from '../food/NotificationExpiring';
 const Welcome = () => {
   const { id } = useAuth();
 
@@ -153,7 +153,7 @@ const Welcome = () => {
                       {new Date(item.props.dateExpiry).toLocaleDateString()})
                     </span>
                   )}
-                  <Notifications name={item.props.name} />
+                  <NotificationExpiring name={item.props.name} />
                 </li>
               ))}
             </ul>

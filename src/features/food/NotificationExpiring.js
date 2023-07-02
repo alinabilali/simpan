@@ -18,15 +18,15 @@ const Notifications = ({ name }) => {
 
   const showNotification = () => {
     if (Notification.permission === 'granted') {
-      new Notification(`Expired Food`, {
-        body: `${name} is expired today!`,
+      new Notification(`${name} is expiring next week`, {
+        body: `Eat ${name} or find recipe to avoid waste!`,
         icon: 'path/to/notification/icon.png',
       });
     } else if (Notification.permission !== 'denied') {
       Notification.requestPermission().then((permission) => {
         if (permission === 'granted') {
-          new Notification(`Expired food`, {
-            body: `${name} is expired today!`,
+          new Notification(`${name} is expiring next week`, {
+            body: `Eat ${name} or find recipe to avoid waste!`,
             icon: 'path/to/notification/icon.png',
           });
         }
